@@ -1,0 +1,305 @@
+.page {
+  position: relative;
+  width: 1560px;
+  height: 900px;
+}
+
+.sider-financiador {
+  position: absolute;
+  width: 288px;
+  height: 900px;
+  left: 0px;
+  top: 0px;
+}
+
+.sider-fornecedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+
+  position: absolute;
+  width: 288px;
+  height: 144px;
+  left: 0px;
+  top: 0px;
+}
+
+.side-left {
+  position: absolute;
+  width: 288px;
+  height: 900px;
+  left: 0px;
+  top: 0px;
+}
+
+.logo {
+  position: absolute;
+  width: 160px;
+  height: 30px;
+  left: 24px;
+  top: 25px;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 9px;
+
+  position: absolute;
+  width: 255px;
+  height: 53px;
+  left: 336px;
+  top: 104px;
+}
+
+.sider-logo {
+  width: 288px;
+  height: 80px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 288px;
+  height: 64px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.menu-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+
+  width: 288px;
+  height: 80px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.table-box {
+  box-sizing: border-box;
+
+  width: 1177px;
+  height: 48px;
+
+  /* P. White / 1 */
+
+  background: #ffffff;
+  /* N. Mid / 4 */
+
+  border: 1px solid #dfe2eb;
+  border-radius: 6px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.table-box-invoice-number {
+  width: 30px;
+  height: 18px;
+  left: 30px;
+  top: 15px;
+
+  /* p14 - Medium 500 */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+
+  /* N. Dark / 3 */
+
+  color: #4d5566;
+}
+
+.table-box-invoice-buyer {
+  position: absolute;
+  width: 86px;
+  height: 18px;
+  left: 201px;
+  top: 15px;
+
+  /* p14 - Medium 500 */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+
+  /* N. Dark / 3 */
+
+  color: #4d5566;
+}
+
+.table-box-invoice-provider {
+  position: absolute;
+  width: 94px;
+  height: 18px;
+  left: 355px;
+  top: 15px;
+
+  /* p14 - Medium 500 */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+
+  /* N. Dark / 3 */
+
+  color: #4d5566;
+}
+
+.table-box-invoice-emission-date {
+  /* 12/02/2020 */
+
+  position: absolute;
+  width: 77px;
+  height: 18px;
+  left: 499px;
+  top: 15px;
+
+  /* p14 - Medium 500 */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+
+  /* N. Dark / 3 */
+
+  color: #4d5566;
+}
+
+.table-box-invoice-value {
+  position: absolute;
+  width: 87px;
+  height: 18px;
+  left: 648px;
+  top: 15px;
+
+  /* p14 - Medium 500 */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+
+  /* P. Green / 1 */
+
+  color: #00ad8c;
+}
+
+.table-box-invoice-status {
+  /* Recebido */
+
+  position: absolute;
+  width: 59px;
+  height: 16px;
+  left: 821px;
+  top: 16px;
+
+  /* p10 - Caption 700 */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #00ad8c;
+}
+
+.table-base {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+
+  position: absolute;
+  width: 1177px;
+  height: 214px;
+  left: 336px;
+  top: 176px;
+}
+
+.frame-704 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+
+  position: absolute;
+  width: 1177px;
+  height: 214px;
+  left: 336px;
+  top: 176px;
+}
+
+.table-header {
+  width: 1177px;
+  height: 22px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.rectangle-224 {
+  /* Rectangle 224 */
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
