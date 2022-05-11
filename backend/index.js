@@ -1,13 +1,14 @@
 const express = require("express");
 const { orders, buyers, providers } = require("./models");
 const sequelize = require('sequelize');
+const cors = require('cors');
 
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 app.listen(3000, () => console.log("ouvindo porta 3000!"));
 
-// Este endpoint usa o método findAll do Sequelize para retorno todos os users.
 app.get("/", async (_req, res) => {
   try {
     const user = await orders.findAll({
@@ -40,4 +41,3 @@ app.get("/", async (_req, res) => {
   }
 });
 
-// ...
