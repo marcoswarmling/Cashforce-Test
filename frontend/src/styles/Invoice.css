@@ -1,15 +1,91 @@
-.page {
-  position: relative;
-  width: 1560px;
-  height: 900px;
+body{
+  margin: 0;
+  padding: 0;
 }
 
-.sider-financiador {
-  position: absolute;
-  width: 288px;
-  height: 900px;
-  left: 0px;
-  top: 0px;
+
+.btn-box {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  display: inline-block;
+  padding-left: 5px;
+  width: 149px;
+  height: 20px;
+
+  /* H3- Bold 700 */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height, or 117% */
+
+  /* P. Dark Blue / 5 */
+
+  color: #021b51;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.selected-title {
+  width: 85px;
+  height: 18px;
+
+  /* p14 - Medium 500 */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+
+  /* P. Green / 5 */
+
+  color: #00ad8c;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+
+.visualize-propostas {
+  /* Visualize as propostas que você já fez para as duplicatas do marketplace. */
+
+  width: 255px;
+
+  /* p14 - Regular 400 */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  /* N. Dark / 4 */
+
+  color: #727d94;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .sider-fornecedor {
@@ -22,19 +98,10 @@
   width: 288px;
   height: 144px;
   left: 0px;
-  top: 0px;
-}
-
-.side-left {
-  position: absolute;
-  width: 288px;
-  height: 900px;
-  left: 0px;
-  top: 0px;
+  top: 0px;;
 }
 
 .logo {
-  position: absolute;
   width: 160px;
   height: 30px;
   left: 24px;
@@ -56,6 +123,8 @@
 }
 
 .sider-logo {
+  padding-top: 5%;
+  padding-left: 17%;
   width: 288px;
   height: 80px;
 
@@ -68,8 +137,8 @@
 
 .menu-item {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
   padding: 0px;
 
   width: 288px;
@@ -99,7 +168,7 @@
 
 .table-box {
   box-sizing: border-box;
-
+  display: flex;
   width: 1177px;
   height: 48px;
 
@@ -116,6 +185,21 @@
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+
+.table-box > div {
+  display: flex;
+  padding-left: 4%;
+  padding-right: 2.3%;
+  padding-top: 1.1%;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  flex:none;
 }
 
 .table-box-invoice-number {
@@ -140,7 +224,6 @@
 }
 
 .table-box-invoice-buyer {
-  position: absolute;
   width: 86px;
   height: 18px;
   left: 201px;
@@ -162,7 +245,6 @@
 }
 
 .table-box-invoice-provider {
-  position: absolute;
   width: 94px;
   height: 18px;
   left: 355px;
@@ -185,8 +267,6 @@
 
 .table-box-invoice-emission-date {
   /* 12/02/2020 */
-
-  position: absolute;
   width: 77px;
   height: 18px;
   left: 499px;
@@ -208,7 +288,6 @@
 }
 
 .table-box-invoice-value {
-  position: absolute;
   width: 87px;
   height: 18px;
   left: 648px;
@@ -231,11 +310,9 @@
 
 .table-box-invoice-status {
   /* Recebido */
-
-  position: absolute;
-  width: 59px;
+  width: 10%;
   height: 16px;
-  left: 821px;
+  left: 700px;
   top: 16px;
 
   /* p10 - Caption 700 */
@@ -280,7 +357,7 @@
   width: 1177px;
   height: 214px;
   left: 336px;
-  top: 176px;
+  top: 250px;
 }
 
 .table-header {
@@ -296,10 +373,278 @@
 
 .rectangle-224 {
   /* Rectangle 224 */
-
-  position: absolute;
+  display: flex;
   left: 0%;
   right: 0%;
   top: 0%;
   bottom: 0%;
+}
+
+.rectangle-224 > div {
+  padding-right: 3%;
+}
+
+.nota-fiscal {
+  padding-left: 2.1%;
+  left: 2.55%;
+  right: 90.91%;
+  top: 13.64%;
+  bottom: 13.64%;
+
+  /* p12 - Caption 700 */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  /* N. Mid / 1 */
+
+  color: #a1a8b8;
+
+  border-radius: 4px;
+}
+
+.sacado {
+  left: 17.08%;
+  right: 78.59%;
+  top: 13.64%;
+  bottom: 13.64%;
+  padding-left: 2.7%;
+
+  /* p12 - Caption 700 */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  /* N. Mid / 1 */
+
+  color: #a1a8b8;
+
+  border-radius: 20px;
+}
+
+.cedente {
+  left: 30.16%;
+  right: 65.25%;
+  top: 13.64%;
+  bottom: 13.64%;
+  padding-left: 6.7%;
+
+  /* p12 - Caption 700 */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  /* N. Mid / 1 */
+
+  color: #a1a8b8;
+
+  border-radius: 4px;
+}
+
+.emissao {
+  left: 42.4%;
+  right: 53.1%;
+  top: 13.64%;
+  bottom: 13.64%;
+  padding-left: 6.5%;
+
+  /* p12 - Caption 700 */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  /* N. Mid / 1 */
+
+  color: #a1a8b8;
+
+  border-radius: 4px;
+}
+
+.valor {
+  left: 55.23%;
+  right: 41.46%;
+  top: 13.64%;
+  bottom: 13.64%;
+  padding-left: 5.8%;
+
+  /* p12 - Caption 700 */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  /* N. Mid / 1 */
+
+  color: #a1a8b8;
+
+  border-radius: 4px;
+}
+
+.status {
+  /* status */
+  left: 69.75%;
+  right: 26.51%;
+  top: 13.64%;
+  bottom: 13.64%;
+  padding-left: 9.3%;
+
+  /* p12 - Caption 700 */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  /* N. Mid / 1 */
+
+  color: #a1a8b8;
+
+  border-radius: 4px;
+}
+
+.btn {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  padding-left: 37.8px;
+  text-align: center;
+  width: 160px;
+  height: 5px;
+  left: 1004px;
+
+  /* P. Blue / 2 */
+
+  border: 1px solid #cad3ff;
+  border-radius: 22px;
+  align-self: center;
+}
+
+.btn-text {
+  /* Dados do cedente */
+  align-self: center;
+  width: 107px;
+  height: 16px;
+
+  /* p12 - Bold 700 */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* N. Dark / 4 */
+
+  color: #727d94;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+
+.frame-subtitle {
+  position: relative;
+  display: flex;
+  padding-left: 20%;
+  padding-top: 5%;
+  flex-direction: column;
+  gap: 5px;
+
+  width: 255px;
+  height: 53px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 6;
+  flex-grow: 0;
+}
+
+.emoji-image {
+  box-sizing: border-box;
+
+  left: 0%;
+  right: 0%;
+  top: 20.83%;
+  bottom: 20.57%;
+
+  /* P. Green / 5 */
+
+  width: 30px;
+}
+
+.rectangle-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 10px;
+
+  width: 4px;
+  height: 84px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
